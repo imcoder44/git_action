@@ -5,13 +5,14 @@ on:
     branches:
       - main
 
-
 jobs:
+
   job1:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v7
+
       - name: Job 1
         run: python job1.py
 
@@ -21,6 +22,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v7
+
       - name: Job 2
         run: python job2.py
 
@@ -30,6 +32,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v7
+
       - name: Job 3
         run: python job3.py
 
@@ -39,6 +42,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v7
+
       - name: Job 4
         run: python job4.py
 
@@ -48,6 +52,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v7
+
       - name: Job 5
         run: python job5.py
 
@@ -57,5 +62,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v7
+
       - name: Job 6
         run: python job6.py
